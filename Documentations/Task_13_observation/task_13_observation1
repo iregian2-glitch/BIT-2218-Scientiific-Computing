@@ -1,0 +1,37 @@
+# Task 13: Interpolation
+
+## 1. Objective
+The aim is to estimate temperatures between hourly sensor measurements.
+
+## 2. Inputs
+The program uses hours 8:00 to 14:00 and their recorded temperatures. It estimates temperatures every 10 minutes.
+
+## 3. Mathematical Operations
+Linear interpolation estimates values using straight lines between neighboring measurements. Cubic spline interpolation uses smooth cubic curves. Matplotlib displays the results in a graph.
+
+## 4. Original Output
+At 10:30, linear interpolation estimates 23.25°C, while cubic spline interpolation estimates approximately 23.36°C.
+
+## 5. Modified Input
+I changed the temperature recorded at 13:00 from 25.5°C to 27.0°C.
+
+## 6. Observation
+Changing the 13:00 measurement affects nearby interpolated values. The estimate at 10:30 changes slightly with cubic spline interpolation but remains 23.25°C with linear interpolation.
+
+## 7. Interpretation
+The graph shows how both methods estimate temperatures between recorded measurements. Linear interpolation connects neighboring points with straight lines, while cubic spline interpolation creates a smoother curve.
+
+## 8. Related Real-World Problem
+This method can help estimate temperatures when a weather or environmental sensor records data hourly but an application requires readings every 10 minutes.
+
+## 9. Assumptions
+The recorded temperatures are accurate. Estimates between measurements are approximations, not actual sensor readings.
+
+## 10. New Input Data
+The temperature at 13:00 was increased from 25.5°C to 27.0°C.
+
+## 11. Modified Output
+After the change, the linear estimate at 10:30 remains 23.25°C, while the cubic spline estimate becomes approximately 23.40°C.
+
+## 12. Interpretation of the Modified Problem
+The results demonstrate that interpolation methods can respond differently to changes in the measured data. Cubic spline interpolation can be influenced by measurements beyond the two points surrounding the target time, while linear interpolation uses the neighboring points.

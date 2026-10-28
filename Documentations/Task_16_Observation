@@ -1,0 +1,33 @@
+# Task 16: Numerical Integration
+
+## 1. Objective
+To estimate the total electrical energy consumed using smart-meter power readings.
+
+## 2. Inputs
+- Time readings: 0, 2, 4, 6, 8, 10 and 12 hours.
+- Power readings: 0.8, 1.0, 1.4, 1.8, 1.6, 1.2 and 0.9 kW.
+
+## 3. Mathematical Operations
+The program uses the trapezoidal rule and Simpson's rule to calculate the area under the power-versus-time curve.
+
+Energy is calculated by integrating power over time.
+
+## 4. Output and Interpretation
+The trapezoidal rule estimates energy consumption as 15.700 kWh, while Simpson's rule estimates 15.800 kWh.
+
+The difference is 0.100 kWh. Both methods give similar estimates, but they approximate the area differently.
+
+## 5. Input Modification
+Change the power reading at 6 hours from `1.8` to `2.0`:
+
+`power_kw = np.array([0.8, 1.0, 1.4, 2.0, 1.6, 1.2, 0.9])`
+
+The trapezoidal estimate becomes **15.900 kWh**, and Simpson's estimate becomes **16.333 kWh** (rounded to three decimal places). Both estimates increase because the recorded power at 6 hours is higher.
+
+## 6. Related Real-World Application
+This program can help a household estimate electricity consumption from smart-meter readings.
+
+Assumption: Power changes approximately between the recorded measurements. The result is an estimate, not an exact measurement of consumption.
+
+## 7. Conclusion
+Numerical integration helps estimate total energy consumption from power readings taken at different times.

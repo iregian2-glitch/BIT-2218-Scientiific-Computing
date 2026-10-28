@@ -1,0 +1,51 @@
+# Task 7: Gaussian Elimination and LU Decomposition
+
+## 1. Objective
+
+The aim is to solve systems of equations using LU decomposition and compare the result with a direct solution.
+
+## 2. Inputs
+
+The program uses a 3 by 3 matrix and three sets of measurements.
+
+## 3. Mathematical Operations
+
+LU decomposition breaks a matrix into two simpler matrices. The program uses these matrices to solve each set of measurements.
+
+It also calculates the residual to check how close the solution is to the correct answer.
+
+## 4. Original Output
+
+The program calculates a solution for each measurement set. The residuals are zero or very close to zero. The direct solution for the first set is [5, 5, 5].
+
+## 5. Modified Input
+
+I changed the first value in the first measurement set from 15.0 to 17.0.
+
+## 6. Observation
+
+Changing the measurement value changes the calculated solution. The other measurement sets remain unchanged.
+
+## 7. Interpretation
+
+The results show that LU decomposition can solve several systems using the same matrix. The small residual values show that the calculated answers are accurate.
+
+## 8. Related Real-World Problem
+
+This method can be used to estimate temperatures in three connected rooms in a building. The equations describe how heat moves between the rooms.
+
+## 9. Assumptions
+
+The room connections are known, and the same equations apply during each measurement. The heat measurements can change over time.
+
+## 10. New Input Data
+
+The heat measurements are represented by three sets of values. One value is changed to show how the solution responds to a new measurement.
+
+## 11. Output
+
+The program calculates new values for the three unknowns when the measurement data changes.
+
+## 12. Interpretation of the Modified Problem
+
+The results show how changes in heat measurements affect the calculated values. LU decomposition helps solve the equations efficiently when the same matrix is used repeatedly.

@@ -1,0 +1,70 @@
+# Task 4: Floating-Point Arithmetic and Numerical Errors
+
+## 1. Objective
+
+The aim is to understand why computers sometimes produce small errors when working with decimal numbers.
+
+## 2. Inputs
+
+The program uses these values:
+
+- 0.1 and 0.2 for addition.
+- 0.3 as the expected answer.
+- 1.414 as an approximate value of the square root of 2.
+- 0.0001, 0.00000001 and 0.000000000001 for testing two formulas.
+
+## 3. Mathematical Operations
+
+The program performs the following operations:
+
+- Adds 0.1 and 0.2.
+- Compares the answer with 0.3.
+- Uses `np.isclose()` to check whether the values are approximately equal.
+- Calculates absolute error and relative error.
+- Compares two formulas to see how numerical errors affect their results.
+
+## 4. Original Output
+
+The program shows that 0.1 + 0.2 gives approximately 0.30000000000000004 instead of exactly 0.3.
+
+The exact comparison returns False, but the tolerance-based comparison returns True.
+
+The absolute error is 0.00021356, and the relative error is 0.01510114%.
+
+The two formulas give almost the same result for larger values of x. For very small values, the direct formula shows a larger numerical error.
+
+## 5. Modified Input
+
+I changed the approximate value from 1.414 to 1.4142.
+
+## 6. Observation
+
+The new approximate value is closer to the true value of the square root of 2. The absolute error and relative error become smaller.
+
+## 7. Interpretation
+
+Computers store many decimal numbers as approximations. This can cause small errors in calculations. Using a tolerance-based comparison helps us check whether two numbers are close enough instead of requiring them to be exactly equal.
+
+## 8. Related Real-World Problem
+
+A scientific sensor may record a measurement that is slightly different from its expected value. A program can compare the measured value with the expected value and check whether the difference is small enough to be acceptable.
+
+## 9. Assumptions
+
+- The expected sensor value is known.
+- Small differences may occur because of rounding or measurement precision.
+- A tolerance of 0.001 is used to decide whether the values are close enough.
+
+## 10. New Input Data
+
+- Expected sensor reading: 10.0
+- Measured sensor reading: 10.0004
+- Allowed tolerance: 0.001
+
+## 11. Output
+
+The measured reading is close enough to the expected reading because the difference is smaller than the allowed tolerance.
+
+## 12. Interpretation of the Modified Problem
+
+The program can help check sensor readings without rejecting values because of very small differences. This is useful in scientific measurements and engineering systems.

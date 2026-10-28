@@ -1,0 +1,40 @@
+
+# Task 9: Eigenvalues and Eigenvectors
+
+## 1. Objective
+The aim is to identify important nodes in a small computer network using eigenvalues and eigenvectors.
+
+## 2. Inputs
+The program uses a matrix showing connections between four nodes: A, B, C and D.
+
+## 3. Mathematical Operations
+NumPy calculates the eigenvalues and eigenvectors. The program uses the largest eigenvalue and its eigenvector to estimate the importance of each node.
+
+## 4. Original Output
+Nodes B and C have importance scores of about 0.2808. Nodes A and D have scores of about 0.2192.
+
+## 5. Modified Input
+I changed the connection between nodes A and D by changing the first row from [0., 1., 1., 0.] to [0., 1., 1., 1.].
+
+I also changed the last row from [0., 1., 1., 0.] to [1., 1., 1., 0.].
+
+## 6. Observation
+The network connections changed, so the eigenvalue and importance scores also changed.
+
+## 7. Interpretation
+The scores help show which nodes are more important based on their connections to other nodes.
+
+## 8. Related Real-World Problem
+This method can help identify important computers or devices in a network.
+
+## 9. Assumptions
+The network has four nodes. A value of 1 means two nodes are connected, while 0 means they are not connected.
+
+## 10. New Input Data
+I added a connection between nodes A and D. The other connections remain unchanged.
+
+## 11. Output
+The program calculates new importance scores for all four nodes.
+
+## 12. Interpretation of the Modified Problem
+Adding a connection changes the network structure and can affect the importance of each node.

@@ -1,0 +1,40 @@
+# Task 3: Mathematical Functions and Vectorization
+
+## 1. Objective
+Compare a normal Python loop with NumPy vectorization when processing one million network-latency readings.
+
+## 2. Inputs
+- Number of readings: 1,000,000
+- Minimum latency: 5 milliseconds
+- Maximum latency: 250 milliseconds
+- Random seed: 42
+
+## 3. Mathematical operation
+Each latency is converted from milliseconds to seconds and then squared.
+
+Formula:
+
+y = (x / 1000)^2
+
+The program implements this operation using both a Python loop and NumPy vectorization.
+
+## 4. Output and interpretation
+The program prints the first five calculated values, the execution time for each method, and the approximate speed-up.
+
+Both methods calculate the same result. NumPy vectorization is generally faster because it performs array operations efficiently.
+
+The exact timings depend on the computer used to run the program.
+
+## 5. Modification of an input
+I increased the maximum simulated latency from 250 milliseconds to 400 milliseconds.
+
+The program can now generate higher latency values, producing larger possible squared results. Execution timings may also change.
+
+## 6. Related real-world application
+This program could be used in network monitoring to process large collections of latency measurements and calculate squared errors.
+
+Assumptions:
+- The generated readings represent simulated network latency.
+- Latency is measured in milliseconds.
+- The same mathematical operation is applied to every reading.
+- Execution times depend on the computer and its current workload.

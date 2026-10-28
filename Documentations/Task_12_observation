@@ -1,0 +1,37 @@
+# Task 12: Polynomial and Nonlinear Equation Solving
+
+## 1. Objective
+The aim is to find where a circle and a parabola intersect using Python.
+
+## 2. Inputs
+The circle is represented by x² + y² = 4. The parabola is represented by y = x² - 1. The program uses two initial guesses to find the intersections.
+
+## 3. Mathematical Operations
+The program uses SciPy's root function to solve two nonlinear equations. It also checks the residuals to see whether the answers satisfy the equations.
+
+## 4. Original Output
+The two intersection points are approximately (1.51749, 1.30278) and (-1.51749, 1.30278). The solver reports convergence for both initial guesses.
+
+## 5. Modified Input
+I changed the circle equation from x² + y² = 4 to x² + y² = 9.
+
+## 6. Observation
+The intersection points move farther from the origin because the circle becomes larger.
+
+## 7. Interpretation
+The results show the coordinates where the circle and parabola meet. Residuals close to zero indicate that the calculated points satisfy both equations.
+
+## 8. Related Real-World Problem
+This method can be adapted to find where a circular coverage area intersects a curved route.
+
+## 9. Assumptions
+The circle and parabola are represented by the stated mathematical equations. The numerical solver uses suitable initial guesses to locate the intersections.
+
+## 10. New Input Data
+The circle's radius was increased from 2 to 3, so the equation changes from x² + y² = 4 to x² + y² = 9.
+
+## 11. Modified Output
+The new intersection points are approximately (1.83638, 2.37228) and (-1.83638, 2.37228).
+
+## 12. Interpretation of the Modified Problem
+Increasing the circle's radius changes the intersection coordinates. The numerical method finds the new points where the circle and parabola meet.

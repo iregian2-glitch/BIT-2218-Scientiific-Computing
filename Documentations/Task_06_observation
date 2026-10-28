@@ -1,0 +1,41 @@
+# Task 6: Solution of Systems of Linear Equations
+
+## 1. Objective
+The aim is to use Python to solve two equations with two unknown values.
+
+## 2. Inputs
+The equations are:
+
+2x + y = 10
+
+x + 3y = 15
+
+## 3. Mathematical Operations
+The program uses NumPy's `np.linalg.solve()` to find the values of x and y.
+
+## 4. Original Output
+The solution is x = 3 and y = 4. The program checks that these values give the correct results.
+
+## 5. Modified Input
+I changed the right-hand-side values from [10, 15] to [12, 15].
+
+## 6. Observation
+The values of x 4.2 and y 3.6 change when the input values change.
+
+## 7. Interpretation
+The program finds values that satisfy both equations at the same time.
+
+## 8. Related Real-World Problem
+A business can use equations to calculate how many units of two products it should make using limited resources.
+
+## 9. Assumptions
+The equations and resource values are known, and the unknown values can be calculated using these equations.
+
+## 10. New Input Data
+The first equation's right-hand side changes from 10 to 12. The second remains 15.
+
+## 11. Output
+The program calculates a new solution for x and y.
+
+## 12. Interpretation of the Modified Problem
+The new values show how changing the available resources or requirements changes the solution.

@@ -1,0 +1,27 @@
+# Task 2: NumPy Arrays and Numerical Computation
+
+# 1. Objective
+To use NumPy arrays to analyse 24 hourly temperature readings.
+
+## 2. Inputs
+The program uses 24 temperature readings measured in degrees Celsius.
+
+## 3. Mathematical Operations
+- Calculate the mean temperature using `np.mean()`.
+- Calculate the minimum using `np.min()`.
+- Calculate the maximum using `np.max()`.
+- Convert Celsius to Fahrenheit using `F = 1.8C + 32`.
+
+## 4. Original Output
+Daily mean temperature: 23.12 C
+Minimum temperature: 17.50 C
+Maximum temperature: 29.40 C
+First six Fahrenheit readings: [65.3  64.4  64.04 63.5  64.22 66.2 ]
+
+## 5. Modified Input
+I changed one temperature reading from 29.4°C to 35.0°C.
+
+## 6. Observation
+When I changed the temperature from 29.4°C to 35.0°C, the average temperature increased from 23.12°C to 23.35°C. The highest temperature increased from 29.4°C to 35.0°C. The lowest temperature stayed at 17.5°C. The first six Fahrenheit readings did not change.
+## 7. Interpretation
+The results show that changing one temperature can affect the average and highest temperatures. The lowest temperature stayed the same because I did not change it. NumPy helped me calculate the temperatures quickly and convert them to Fahrenheit.

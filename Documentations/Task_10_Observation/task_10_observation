@@ -1,0 +1,37 @@
+# Task 10: Root Finding
+
+## 1. Objective
+The aim is to find the equilibrium temperature using the bisection and fixed-point methods.
+
+## 2. Inputs
+The program uses a heat-balance equation and a temperature range of 20°C to 40°C. The initial temperature for fixed-point iteration is 30°C.
+
+## 3. Mathematical Operations
+The program uses the bisection method and fixed-point iteration to find a temperature where the heat-balance function equals zero.
+
+## 4. Original Output
+Both methods give an equilibrium temperature of approximately 27.525211°C. The fixed-point method takes 13 iterations.
+
+## 5. Modified Input
+I changed the constant 25 to 27 in both the `heat_balance()` and `g()` functions.
+
+## 6. Observation
+Increasing the constant changes the calculated equilibrium temperature. The two methods should still give approximately the same answer when they converge.
+
+## 7. Interpretation
+The equilibrium temperature is the temperature at which the heat-balance function equals zero. The graph helps show where this occurs.
+
+## 8. Related Real-World Problem
+This program can be adapted to estimate the equilibrium temperature of a room or piece of equipment under different heating conditions.
+
+## 9. Assumptions
+The heat-balance equation represents the system correctly, and the temperature range contains the required solution.
+
+## 10. New Input Data
+The constant in the equation was increased from 25 to 27 in both functions.
+
+## 11. Output
+The program calculates a new equilibrium temperature and displays it using both methods.
+
+## 12. Interpretation of the Modified Problem
+Changing the constant represents a change in the heating conditions. This affects the equilibrium temperature.

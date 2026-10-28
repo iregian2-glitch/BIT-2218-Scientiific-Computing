@@ -1,0 +1,42 @@
+
+# Task 8: Iterative Methods for Linear Systems
+
+## 1. Objective
+The aim is to calculate temperatures using the Jacobi and Gauss-Seidel methods and compare them with a direct solution.
+
+## 2. Inputs
+The program uses a matrix of five temperature points. The boundary temperatures are 100°C on the left and 20°C on the right.
+
+## 3. Mathematical Operations
+The program uses Jacobi and Gauss-Seidel methods to estimate the temperatures through repeated calculations. It also uses a direct method for comparison.
+
+## 4. Original Output
+The three methods give approximately the same temperatures. The graph shows how the calculation error decreases with each iteration.
+
+## 5. Modified Input
+I changed the left boundary value from 100°C to 80°C by changing the first value in the line:
+b = np.array([100., 0., 0., 0., 20.])
+
+The new line is:
+b = np.array([80., 0., 0., 0., 20.])
+
+## 6. Observation
+After changing the left boundary temperature, the calculated temperatures changed. The three methods still give approximately the same results.
+
+## 7. Interpretation
+The results show that the Jacobi and Gauss-Seidel methods can estimate solutions to systems of equations. The graph helps show how quickly the error decreases.
+
+## 8. Related Real-World Problem
+This program can help estimate temperatures at different points in a building or material.
+
+## 9. Assumptions
+The model uses five temperature points. The boundary temperatures are known, and the temperature relationships remain the same.
+
+## 10. New Input Data
+The left boundary temperature is changed to 80°C, while the right boundary remains at 20°C.
+
+## 11. Output
+The new temperatures are approximately 70°C, 60°C, 50°C, 40°C and 30°C.
+
+## 12. Interpretation of the Modified Problem
+The results show that changing a boundary temperature changes the estimated temperatures inside the model. The iterative methods can calculate these values through repeated updates.

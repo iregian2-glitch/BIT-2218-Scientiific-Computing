@@ -1,0 +1,42 @@
+# Task 18: Numerical Solution of ODEs Using SciPy
+
+## 1. Objective
+The objective is to simulate the charging of a capacitor in an RC electrical circuit using Python and SciPy.
+
+## 2. Inputs
+- Supply voltage: 5 V
+- Resistance: 1000 ohms
+- Capacitance: 0.001 farads
+- Initial capacitor voltage: 0 V
+- Simulation time: 0 to 5 seconds
+
+## 3. Mathematical operation
+The program solves the differential equation:
+
+dV/dt = (Vs - V)/(RC)
+
+The `solve_ivp()` function calculates the capacitor voltage at different times. The numerical results are compared with the exact solution.
+
+## 4. Output and interpretation
+The solver reports success. The capacitor voltage after five seconds is approximately 4.9663 V. This is close to the supply voltage of 5 V.
+
+The numerical result is very close to the exact solution, indicating that the solver is accurate for this example.
+
+The graph shows that the capacitor voltage rises rapidly at first and then gradually approaches the supply voltage.
+
+## 5. Modification of an input
+I changed the supply voltage from 5 V to 8 V.
+
+The capacitor voltage after five seconds increased from approximately 4.9663 V to 7.9461 V.
+
+This happens because a higher supply voltage allows the capacitor to charge to a higher voltage. The numerical error remained very small.
+
+## 6. Related real-world application
+This program could be adapted to simulate a capacitor charging in a phone charger or an electronic power supply.
+
+Assumptions:
+- The supply voltage remains constant.
+- Resistance and capacitance remain constant.
+- The circuit follows the ideal RC charging model.
+
+The simulation helps estimate how quickly the capacitor approaches its supply voltage.

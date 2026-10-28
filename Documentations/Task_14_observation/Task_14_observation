@@ -1,0 +1,37 @@
+# Task 14: Curve Fitting and Approximation
+
+## 1. Objective
+The aim is to fit a mathematical curve to server response-time measurements and predict response time at a higher number of users.
+
+## 2. Inputs
+The program uses the number of concurrent users and their measured response times in milliseconds.
+
+## 3. Mathematical Operations
+The program uses a quadratic model, y = ax² + bx + c. The `curve_fit` function estimates the model parameters. RMSE measures the difference between the measured and predicted response times.
+
+## 4. Original Output
+The fitted model is approximately y = 0.002167x² - 0.1345x + 85.00. The RMSE is 1.55 ms, and the predicted response time at 400 users is 377.86 ms.
+
+## 5. Modified Input
+I changed the measured response time at 350 users from 305 ms to 330 ms.
+
+## 6. Observation
+The fitted curve changes because one of the measurements has increased. The RMSE also increases, showing that the fitted curve does not match all the measurements as closely as before.
+
+## 7. Interpretation
+The graph shows the relationship between the number of concurrent users and server response time. The curve estimates the general trend in the measurements.
+
+## 8. Related Real-World Problem
+This method can help a developer estimate how a website's response time may change as more users access it.
+
+## 9. Assumptions
+The measured data is assumed to represent the server's behavior. The quadratic model is an approximation, so its predictions may not match actual performance, especially at loads beyond the measured range.
+
+## 10. New Input Data
+The response time at 350 users was increased from 305 ms to 330 ms.
+
+## 11. Modified Output
+The fitted model is approximately y = 0.002762x² - 0.3190x + 95.71. The RMSE is approximately 5.96 ms, and the predicted response time at 400 users is 410.00 ms.
+
+## 12. Interpretation of the Modified Problem
+Increasing the final measured response time changes the fitted curve and raises the prediction at 400 users from approximately 377.86 ms to 410.00 ms. This demonstrates how new measurements affect a fitted model.

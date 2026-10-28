@@ -1,0 +1,47 @@
+# Task 19: Numerical Optimization
+
+## 1. Objective
+The objective is to minimize the cost of allocating two types of servers while meeting a minimum processing-capacity requirement.
+
+## 2. Inputs
+- Type A cost: 12 units per allocation unit
+- Type B cost: 18 units per allocation unit
+- Type A capacity: 100 units
+- Type B capacity: 170 units
+- Required capacity: at least 1000 units
+
+## 3. Mathematical operations
+The cost function is:
+
+C = 12x + 18y
+
+The capacity constraint is:
+
+100x + 170y >= 1000
+
+Both allocations must be non-negative. The program uses `scipy.optimize.minimize()` with the SLSQP method to find a low-cost solution.
+
+## 4. Original output and interpretation
+The optimizer selects approximately 0 Type A units and 5.882 Type B units.
+
+The minimum cost is approximately 105.882, and the total capacity is approximately 1000 units.
+
+This solution meets the capacity requirement at the lowest cost for the continuous model.
+
+## 5. Modification of an input
+I changed the cost of Type B from 18 to 22.
+
+The new solution selects approximately 10 Type A units and 0 Type B units. The minimum cost becomes 120, and total capacity remains 1000 units.
+
+The result changes because Type B becomes more expensive, making Type A the cheaper option for meeting the capacity requirement.
+
+## 6. Related real-world application
+This program could help a cloud-service provider estimate a cost-effective allocation of different server types.
+
+Assumptions:
+- Costs and capacities remain constant.
+- Allocations can initially be fractional.
+- The total capacity must be at least 1000 units.
+- The model does not include electricity, maintenance, or other operating costs.
+
+For a real deployment requiring whole servers, the provider would need to compare feasible integer allocations separately.s
